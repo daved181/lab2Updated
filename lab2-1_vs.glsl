@@ -10,6 +10,6 @@ uniform mat4 viewModel;
 void main () {
   
   gl_Position = mvp*vp;
-  position = vec3(mvp * vp);
+  position = vec3(viewModel * vp);
   normal = vec3(viewModel * np);
 };
